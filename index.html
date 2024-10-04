@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page avec Image de Fond et Cadre Centré</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* CSS pour définir l'image de fond du body */
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-image: url('image.jpg'); /* Chemin de l'image de fond */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* CSS pour le cadre centré */
+    .frame {
+      background-image: url('.jpg'); /* Image de fond pour le cadre */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 50%; /* Largeur du cadre */
+      height: 50%; /* Hauteur du cadre */
+      border-radius: 20px; /* Bords arrondis */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre pour l'effet visuel */
+      padding: 20px; /* Espacement intérieur */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      backdrop-filter: blur(5px); /* Effet de flou pour rendre le texte plus lisible */
+    }
+  </style>
+</head>
+<body>
+  <!-- Cadre centré avec une image de fond et du texte -->
+  <div class="frame">
+    <h1>Bienvenue dans le cadre</h1>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
